@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-csp ng-app="CLA" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title state-title></title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+	<script src="script.js"></script>
+	
+    
+</head>
+<body >
+    <div class="container-fluid page-wrap content" dynamic-css-class id="dynamic-css-change">
+        <header>
+            <!-- Header for other Users -->
+            <div class="header-row" >
+                <div class="col-xs-6 col-sm-6 pull-left title">
+                    <div class="menu">
+                        <div id="nav-icon" role="button" aria-expanded="false" tabindex="0" title="CLA or ARA Menu" aria-label="C L A or A R A Menu Press Enter or Spacebar">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div id="side-nav" class="sidenav" aria-hidden="true" aria-label="Menu Items">
+                        <ul role="group" id="menu">
+                            <li><a href="#" title="CLA" aria-label="C L A Home Page" ng-click="app.OpenClaHomePage()" tabindex="-1">CLA</a></li>
+                            <li><a href="#" id="ara-link" title="ARA" aria-label="A R A Home Page" ng-click="app.OpenAraHomePage()" tabindex="-1">ARA</a></li>
+                        </ul>
+                    </div>
+                    <div class="back-navigate">
+                        <button role="button" title="Go Back" class="icon icon-back-arrow glyphicon glyphicon-arrow-left" id="back-button" aria-label="Click to Go Previous Page" tabindex="0"></button>
+                    </div>
+                    <div id="head-title"><h1 class="header-title">Header Title</h1></div>
+                </div>
+                <div class="col-xs-6 col-sm-6 text-right">
+                    <div id="user-info">
+                        <span id="username" aria-label="User Name">UserName</span>&nbsp;
+                        <span id="log-info">
+                            <a class="icon icon-user glyphicon glyphicon-user" title="User Profile Icon" aria-expanded="false" aria-controls="signoutBlock" tabindex="0" aria-label="User Name Icon. Click to get Sign Out button" ></a>
+                            <div class="sign-out collapse" id="signoutBlock"><button role="button" id="btnSignOut" aria-label="Sign Out" class="btn btn-primary signout-btn">Sign Out</button></div>
+                        </span>
+                    </div>
+					
+                </div>
+            </div>
+        </header>
+        <main>
+
+      <div id="main">
+        <p>
+          Main Content Area
+        </p>
+        <input type="search" id="input-box">
+		<table class="table">
+						<thead>
+						  <tr>
+							<th>Firstname</th>
+							<th>Lastname</th>
+							<th>Email</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<td>John</td>
+							<td>Doe</td>
+							<td>john@example.com</td>
+						  </tr>
+						  <tr>
+							<td>Mary</td>
+							<td><div><span class="offscreen sr-only">state</span><span class="SampleCell"></span></div></td>
+							<td>mary@example.com</td>
+						  </tr>
+						  <tr>
+							<td>July</td>
+							<td>Dooley</td>
+							<td>july@example.com</td>
+						  </tr>
+						</tbody>
+					</table>
+      </div>
+    </main>
+    </main>
+        
+    </div>
+    
+</body>
+</html>
